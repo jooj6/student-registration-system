@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+    <marquee>
+        🎓 Welcome to Student Registration System | Built by Yohannes Kebede 🚀
+    </marquee>
+</div>
+
+        <h1>Student Registration System</h1>
+        <div class="stats">
+    <div class="card">
+        <p>Total Students</p>
+        <h2 id="count">0</h2>
+    </div>
+</div>
+
+        <form id="studentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+                required>
+
+            <input
+                type="text"
+                id="id"
+                placeholder="Student ID"
+                required>
+
+            <input
+                type="text"
+                id="department"
+                placeholder="Department"
+                required>
+
+            <button type="submit">
+                Add Student
+            </button>
+
+        </form>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Student">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Department</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
